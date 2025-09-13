@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mukesh Gupta | Portfolio</title>
+  <style>
+    /* Reset & basic styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.25rem;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      color: #007acc;
+    }
+    .about p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #007acc;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+    .project-card a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .contact a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mukesh Gupta</h1>
+    <p>Web Developer &amp; Designer</p>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Mukesh, a passionate web developer focused on creating clean, responsive websites and web applications. I love learning new technologies and turning ideas into reality.
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/mukeshgpt20/mukeshgpt20.github.io" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>A simple and intuitive todo list app built with vanilla JavaScript.</p>
+        <a href="https://github.com/mukeshgpt20/todo-app" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <!-- Add more projects as you like -->
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me via <a href="mailto:mukesh@example.com">email</a> or find me on <a href="https://linkedin.com/in/mukeshgpt20" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Mukesh Gupta. All rights reserved.
+  </footer>
+</body>
+</html>
 
