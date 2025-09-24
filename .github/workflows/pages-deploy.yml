@@ -27,6 +27,9 @@ jobs:
       - name: Add Linux platform support
         run: bundle lock --add-platform x86_64-linux
 
+      - name: Disable bundler frozen mode (fix Gemfile.lock frozen error)
+        run: bundle config set frozen false
+
       - name: Install dependencies
         run: bundle install
 
