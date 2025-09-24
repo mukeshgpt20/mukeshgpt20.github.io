@@ -23,3 +23,6 @@ I want to document my learning journey and maybe help others along the way.
 - Write consistently
 
 Stay tuned! 🚀
+
+
+Written by [{{ site.author.name }}]({{ site.author.url }})
